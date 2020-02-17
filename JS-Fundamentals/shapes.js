@@ -20,4 +20,29 @@ Example for printShape("Diamond", 5, "*");
  ***
   * 
 */
-function printShape(shape, height, character) {}
+function printShape(shape, height, character) {
+  let newStr = "";
+  switch (shape) {
+    case "Triangle":
+      for (let i = 1; i <= height; i++) {
+        for (let j = 0; j < i; j++) {
+          newStr += character;
+          console.log(newStr);
+        }
+      }
+      break;
+    case "Square":
+      for (let a = 0; a < height; a++) {
+        newStr += character;
+      }
+      for (let b = 0; b < height; b++) {
+        console.log(newStr);
+      }
+      newStr = "";
+      break;
+    case "Diamond":
+  }
+}
+
+printShape("Triangle", 3, "$");
+printShape("Square", 3, "%");
