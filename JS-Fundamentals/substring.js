@@ -10,4 +10,4 @@ function substring(someStr, startIndex, endIndex) {
   } else return someStr.substring(startIndex, endIndex);
 }
 
-substring(1, 0, 3);
+substring("lobster", 0, 3);
